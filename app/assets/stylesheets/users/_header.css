@@ -1,0 +1,42 @@
+header .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+}
+header .fixed-top{
+    z-index: 1030;
+}
+header .navbar>.container-fluid{
+    display: flex;
+    width: 100%;
+}
+header .mr-3{
+    width: 90%;
+    margin-right: 1rem !important;
+}
+header .ml-auto{
+    display: flex !important;
+    flex-direction: row;
+    float: right;
+}
+header .navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,0.5);
+}
+header .navbar .nav-link {
+    font-size: .9rem;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+header .nav-item{
+    list-style-type: none;
+}
+header .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+header .nav-link:hover{
+    color: black !important;
+}
