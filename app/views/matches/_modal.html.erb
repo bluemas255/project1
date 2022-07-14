@@ -1,0 +1,49 @@
+
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Xác nhận đặt sân</h4>
+        <button type="button" class="close pull-right" >
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="d-flex align-items-center form-group">
+            <label for="pitchList" style="margin-right: 20px;">Chọn sân: </label>
+            <select name="yard" id="pitchList" >
+                <option *ngFor="let item of listPitch">
+                    {{ thoi gian va ten }}
+                </option>
+            </select>
+        </div>
+        <p>Hình thức trận</p>
+        <div class="check" style="width: 100%;">
+            <input type="checkbox" id="exampleCheck1" style="margin: 0 20px;">
+            <label for="exampleCheck1">Cáp kèo(danh cho nguoi solo)</label>
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary float-right">Yes(click de luu vao csdl)</button>
+        <button type="button" class="btn btn-primary ">No(click de reset tat ca nhung truong)</button>
+    </div>
+</ng-template>
+
+<ng-template #templateNested>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Hình thức</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef2.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p>Chọn phương thức thanh toán</p>
+        <select>
+            <option value="">
+                <label for="">Online</label>
+            </option>
+            <option value="">
+                <label for="">Tiền mặt</label>
+            </option>
+        </select><br>
+        <button  type="button" class="btn btn-primary " style="margin-top: 10px;">No</button>
+        <button  type="button" class="btn btn-primary float-right" style="margin-top: 10px;">Yes</button>
+    </div>
+</ng-template>
